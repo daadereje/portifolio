@@ -1,5 +1,5 @@
 import React from "react";
-import photo from "./assets/photo.jpg"; // make sure your photo is inside src/assets/
+import photo from "./assets/photo.jpg"; // make sure photo is inside src/assets/
 
 export default function App() {
   return (
@@ -12,7 +12,9 @@ export default function App() {
           className="w-32 h-32 rounded-full border-4 border-purple-500 shadow-lg"
         />
         <h1 className="mt-4 text-3xl font-bold">Derartu Dereje</h1>
-        <p className="text-gray-400 text-lg mt-2">Frontend Developer | Designer</p>
+        <p className="text-gray-400 text-lg mt-2">
+          Frontend Developer | Designer
+        </p>
       </header>
 
       {/* Navigation */}
