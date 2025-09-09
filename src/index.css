@@ -1,14 +1,8 @@
+/* src/index.css */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* 👉 Custom global styles (minimal, won’t conflict with Tailwind) */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  background-color: #ffffff; /* clean white background */
-  color: #213547;            /* nice readable text color */
-}
+/* minimal global styles */
+html { scroll-behavior: smooth; }
+body { @apply bg-gray-50 text-gray-900 antialiased; font-family: system-ui, Avenir, Helvetica, Arial, sans-serif; }
