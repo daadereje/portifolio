@@ -1,16 +1,63 @@
-// src/components/Contact.jsx
-import React from "react";
+{/* Contact Section */}
+<section id="contact" className="py-20 text-center px-6">
+  <motion.h2
+    className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.8 }}
+  >
+    Contact Me
+  </motion.h2>
 
-const Contact = () => {
-  return (
-    <section id="contact" className="py-16 bg-gray-50 px-6">
-      <div className="max-w-xl mx-auto text-center">
-        <h2 className="text-2xl font-bold mb-4">Contact</h2>
-        <p className="text-gray-700 mb-6">Email: <a href="mailto:derartudereje0@gmail.com" className="text-purple-600">derartudereje0@gmail.com</a></p>
-        <p className="text-gray-700">Phone: <span className="font-medium">+251 938 065 644</span></p>
-      </div>
-    </section>
-  );
-};
+  {/* Contact Info */}
+  <div className="space-y-3">
+    <motion.p
+      className="text-gray-300 hover:text-purple-400 transition text-lg"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.3, duration: 1 }}
+    >
+      📧 derartudereje0@gmail.com
+    </motion.p>
 
-export default Contact;
+    <motion.p
+      className="text-gray-300 hover:text-purple-400 transition text-lg"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ delay: 0.6, duration: 1 }}
+    >
+      📞 +251938065644
+    </motion.p>
+  </div>
+
+  {/* Social Links */}
+  <div className="flex justify-center gap-6 mt-8">
+    <motion.a
+      href="#"
+      className="text-gray-400 hover:text-purple-400 transition text-2xl"
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      🌐
+    </motion.a>
+    <motion.a
+      href="#"
+      className="text-gray-400 hover:text-purple-400 transition text-2xl"
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      💼
+    </motion.a>
+    <motion.a
+      href="#"
+      className="text-gray-400 hover:text-purple-400 transition text-2xl"
+      whileHover={{ scale: 1.2 }}
+      whileTap={{ scale: 0.9 }}
+    >
+      🐙
+    </motion.a>
+  </div>
+</section>
