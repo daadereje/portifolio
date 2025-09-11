@@ -1,44 +1,26 @@
-Derartu's Portfolio
+🌟 DERARTU Portfolio
 
-Welcome to my personal portfolio website! This repository contains the source code for my portfolio where I showcase my projects, skills, achievements, and contact information.
+Hi! I’m a Computer Science student & aspiring full-stack developer passionate about building impactful projects combining code and design.
 
-About the Portfolio
+💻 About
 
-This portfolio is designed to highlight my journey as a Computer Science student and aspiring full-stack developer. It includes:
+This portfolio showcases my skills, projects, achievements, and contact info.
 
-Home Section: Introduction and tagline
+🛠️ Tech Stack
 
-About Section: Education, skills, and personal journey
+Frontend: React.js, Tailwind CSS | Backend: Node.js, Django, PostgreSQL | UI/UX / Mobile: Flutter, Graphic Design 
+🚀 Projects
 
-Projects Section: Web, Java, AI, and hackathon projects
+Higher Education School Registration System: Responsive student registration website
 
-Contact Section: How to reach me
+SmartBazaar AI (Hackathon): Voice-first shopping assistant concept
 
-Tech Stack Used
+Personal Portfolio Website: This portfolio site
 
-Frontend: React.js, Tailwind CSS, Vite
+Social Media App Website (Internship): Backend with Node.js, PostgreSQL, Prisma
 
-Backend (for projects showcased): Node.js, Django, PostgreSQL
 
-Other Tools: Flutter (for mobile UI design), Git/GitHub
-
-Projects Highlighted
-
-Higher Education School Registration System – Responsive student registration website
-
-SmartBazaar AI (Hackathon Idea) – Voice-first shopping assistant concept
-
-Personal Portfolio Website – This website
-
-Social Media App Website (Internship) – Backend development project
-
-Java Projects – Student Management, ATM Simulation, Library Management
-
-AI Projects – Image Classification & Chatbot
-
-(Full project details are available on the website.)
-
-Achievements & Recognition
+🏆 Achievements
 
 SmartBazaar AI Hackathon Participation
 
@@ -48,34 +30,8 @@ UI/UX Design Recognition
 
 Internship backend development experience
 
-Multiple Java & AI projects
 
-How to Run Locally
-
-Clone the repository:
-
-git clone [(https://github.com/daadereje/portifolio)]
-
-
-Navigate to the project folder:
-
-cd [portifolio]
-
-
-Install dependencies:
-
-npm install
-
-
-Start development server:
-
-npm run dev
-
-
-Then open http://localhost:5173
- in your browser.
-
-Contact
+📬 Contact
 
 Email: derartudereje0@gmail.com
 
