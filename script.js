@@ -1,6 +1,5 @@
 // Animate timeline, education, achievements, and contact on scroll
 document.addEventListener("DOMContentLoaded", () => {
-  // Select all animated items
   const items = document.querySelectorAll(
     ".timeline-item, .edu-item, .achievement-item, .contact-info, .contact-form"
   );
@@ -11,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => {
       const itemTop = item.getBoundingClientRect().top;
 
-      // When item enters the viewport
       if (itemTop < triggerBottom) {
         item.classList.add("show");
 
@@ -24,9 +22,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Run on scroll
   window.addEventListener("scroll", checkScroll);
+  checkScroll(); // run on page load
+});
 
-  // Run once on page load
-  checkScroll();
+// Handle contact form submission
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.getElementById("contactForm");
+
+  if (form) {
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+
+      const formData = {
+        name: form.name.value,
+        email: form.email.value,
+        message: form.message.value
+      };
+
+      try {
+        const res = await fetch("http://localhost:5000/contact", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData)
+        });
+
+        if (res.ok) {
+          alert("✅ Message sent successfully!");
+          form.reset();
+        } else {
+          alert("⚠️ Failed to send message.");
+        }
+      } catch (err) {
+        alert("⚠️ Error connecting to server.");
+      }
+    });
+  }
 });
